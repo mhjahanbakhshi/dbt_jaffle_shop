@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_items
+    description: "Staging model for items data."
+    columns:
+      - name: item_id
+        description: "Unique identifier for each location."
+        tests:
+          - not_null
+          - unique
+
+              
