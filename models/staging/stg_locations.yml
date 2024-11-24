@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_locations
+    description: "Staging model for locations data."
+    columns:
+      - name: location_id
+        description: "Unique identifier for each location."
+        tests:
+          - not_null
+          - unique
+      - name: location_name
+        description: "Name of the location."
+        tests:
+          - not_null
+          - unique
+              

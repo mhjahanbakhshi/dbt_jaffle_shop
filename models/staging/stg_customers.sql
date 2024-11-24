@@ -4,7 +4,7 @@ source as (
     select * from {{ source('jaffle_shop', 'customers') }}
 ),
 
-transformed as (
+renamed as (
     select
         -- identifiers
         id as customer_id,
@@ -13,4 +13,4 @@ transformed as (
     from source
 )
 
-select * from transformed
+select * from renamed
