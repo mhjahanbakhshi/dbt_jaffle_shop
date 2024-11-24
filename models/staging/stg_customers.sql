@@ -1,7 +1,7 @@
 with
 
 source as (
-    select * from {{ source('raw', 'customers') }}
+    select * from {{ source('jaffle_shop', 'customers') }}
 ),
 
 transformed as (
